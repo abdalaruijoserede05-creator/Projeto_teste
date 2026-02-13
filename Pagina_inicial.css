@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.principal {
+    display: grid;
+    grid-template-areas: "cabeca cabeca cabeca"
+        "corpo corpo corpo"
+        "perna perna perna ";
+
+    grid-template-columns: 100px 1fr 10px;
+    grid-template-rows: 80px 2fr 50px;
+
+
+}
+/*Cabeçalho*/
+
+.cabeca {
+    grid-area: cabeca;
+    background-color: rgb(7, 7, 121);
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+.cabeca a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.menu a {
+    padding: 10px;
+
+}
+
+.menu a:hover {
+    background: rgba(155, 152, 152, 0.103);
+}
+
+.dados {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 10px;
+}
+.dados img{
+    width: 70px;
+    border-radius: 10px;
+}
+.dados h1{
+    font-size: 20px;
+}
+
+/*Conteudo*/
+
+.corpo {
+    grid-area: corpo;
+  background-color: white;
+   
+}
+
+
+.corpo1 {
+    text-align: center;
+    color: rgb(7, 7, 121);
+}
+
+.cards {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    
+
+}
+.cards :hover{
+    transform: translateY(-10px);
+}
+
+
+.card {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    background-color: whitesmoke;
+    border-radius: 12px;
+    padding: 30px;
+    text-decoration: none;
+    text-align: center;
+    color: #333;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+    height: 100%;
+}
+.card img{
+    width: 50px;
+}
+
+.seccao h3 {
+    margin-left: 20px;
+    margin-top: 70px;
+}
+.tabela{
+    display: flex;
+    flex-wrap: wrap ;
+}
+.principal table {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: o 4px 12px rgba(0, 0, 0, 0.8);
+    margin: 20px;
+    margin-bottom: 100px;
+    
+}
+
+th,
+td {
+    padding: 14px 16px;
+    text-align: left;
+    font-size: 14px;
+   
+}
+
+th {
+    color: black;
+}
+
+/*Rodape*/
+
+.perna {
+    grid-area: perna;
+    background-color: rgb(7, 7, 121);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
